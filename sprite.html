@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Auto3D</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="keywords" content="Auto3D，室内体验"/>
+    <meta name="description" content="Auto3D，行云流水般的室内3D体验"/>
+
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="black"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=yes">
+    <link rel="apple-touch-icon" href="http://auto3d.oss-cn-hangzhou.aliyuncs.com/common/images/d.png">
+    <link rel="stylesheet" type="text/css" href="/static/ic/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/ic/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/ic/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="/static/ic/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="/static/ic/css/ic.css">
+    <script data-main="/static/ic/js/ic" defer async="true" src="/static/ic/js/require.js"></script>
+    <script type="text/javascript">
+      var work_id = '{{ work_id }}'
+    </script>
+</head>
+<body>
+<div id="auto3d" class="hidden">
+
+</div>
+
+
+<div class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top" id="ic_advertisement">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-center advertise_text">
+                    <!--<p>直租免佣，灵活办公，黄金CBD商圈。</p>-->
+                     <a href="tel://13120598865" class="btn btn-link" role="button" id="text_button"></a>
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 close_ad">
+                    <a href="#" class="btn btn-link" role="button" id="close_button"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="btn-group btn-group-justified" role="group" id="navigation" aria-label="navigation button group">
+        <a href="#" class="btn btn-link un-example" role="button" id="house_example"></a>
+
+        <div class="btn-group dropup" role="group" id="suit_group">
+            <a href="#" class="btn btn-link un-info dropdown-toggle" role="button" id="suit_info" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+            <ul class="dropdown-menu" role="menu" id="suit_menu">
+                <li>
+                    <a href="#section_modal" class="btn btn-link" role="button" id="section" data-toggle="modal" data-target="#section_modal"></a>
+                </li>
+                <li>
+                    <a href="#outdoor_modal" class="btn btn-link" role="button" id="outdoor" data-toggle="modal" data-target="#outdoor_modal"></a>
+                </li>
+                <li>
+                    <a href="#detail_modal" class="btn btn-link" role="button" id="detail" data-toggle="modal" data-target="#detail_modal"></a>
+                </li>
+                <!--<div id="bottom_line"></div>-->
+                <img src="http://auto3d.oss-cn-hangzhou.aliyuncs.com/outsource/ic/demo/images/suit_info/line.svg">
+            </ul>
+        </div>
+        <div class="btn-group dropup" role="group" id="virtual_group">
+            <a href="#" class="btn btn-link un-browse dropdown-toggle" role="button" id="virtual_browse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></a>
+            <ul class="dropdown-menu" role="menu" id="virtual_menu">
+                <li>
+                    <a href="#house_modal" class="btn btn-link" role="button" id="house" data-toggle="modal" data-target="#house_modal"></a>
+                </li>
+                <li>
+                    <a href="#corridor_modal" class="btn btn-link" role="button" id="corridor" data-toggle="modal" data-target="#corridor_modal"></a>
+                </li>
+                <li>
+                    <a href="#hall_modal" class="btn btn-link" role="button" id="hall" data-toggle="modal" data-target="#hall_modal"></a>
+                </li>
+                <!--<div id="virtual_line"></div>-->
+                <img src="http://auto3d.oss-cn-hangzhou.aliyuncs.com/outsource/ic/demo/images/virtual_browse/line.svg">
+            </ul>
+        </div>
+
+    </div>
+    <!--<div class="hidden" id="section_container">-->
+        <!--<img src="/static/ic/images/0731.jpg" alt="test">-->
+    <!--</div>-->
+    <!--<div class="outdoor-carousel hidden" id="outdoor_carousel">-->
+        <!--<div><img src="/static/ic/images/0731.jpg" alt="test"></div>-->
+        <!--<div><img src="/static/ic/images/0731.jpg" alt="test"></div>-->
+        <!--<div><img src="/static/ic/images/0731.jpg" alt="test"></div>-->
+    <!--</div>-->
+
+
+
+</div>
+<!-- Modal -->
+<div class="modal fade" id="section_modal" tabindex="-1" role="dialog" aria-labelledby="model section" aria-hidden="true">
+    <div class="modal-dialog lg_dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <img src="http://auto3d.oss-cn-hangzhou.aliyuncs.com/outsource/ic/demo/images/suit_info/section_img.jpg" alt="test">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="outdoor_modal" tabindex="-1" role="dialog" aria-labelledby="model outdoor" aria-hidden="true">
+    <div class="modal-dialog lg_dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="outdoor-carousel" id="outdoor_carousel">
+                    <div><img src="http://auto3d.oss-cn-hangzhou.aliyuncs.com/outsource/ic/demo/images/suit_info/outdoor_0.jpg" alt="test"></div>
+                    <div><img src="http://auto3d.oss-cn-hangzhou.aliyuncs.com/outsource/ic/demo/images/suit_info/outdoor_1.jpg" alt="test"></div>
+                    <div><img src="http://auto3d.oss-cn-hangzhou.aliyuncs.com/outsource/ic/demo/images/suit_info/outdoor_2.jpg" alt="test"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="detail_modal" tabindex="-1" role="dialog" aria-labelledby="model detail" aria-hidden="true">
+    <div class="modal-dialog modal-sm sm_dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <!--<div class="container-fluid">-->
+                    <!---->
+                <!--</div>-->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        A栋为24层的高层办公，单层面积约1500m<sup>2</sup>；核心简结构。
+                        B栋为17层的高层办公，单层面积约2700m，一楼配备独立精装大堂。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade hint_modal" id="house_modal" tabindex="-1" role="dialog" aria-labelledby="model detail" aria-hidden="true">
+  <div class="modal-dialog modal-sm hint_dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title">温馨提醒</h4>
+      </div>
+      <div class="modal-body text-center">
+          <p>可租房间有三个点可供浏览，</p>
+          <p>是否自动浏览</p>
+      </div>
+      <div class="modal-footer">
+          <div class="btn-group btn-group-justified" role="group" id="house_hint" aria-label="button group">
+              <a href="#" class="btn btn-link no_button" role="button" id="house_pano_button"></a>
+              <a href="#" class="btn btn-link yes_button" role="button" id="house_pano_auto_button"></a>
+          </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade hint_modal" id="corridor_modal" tabindex="-1" role="dialog" aria-labelledby="model detail" aria-hidden="true">
+  <div class="modal-dialog modal-sm hint_dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title">温馨提醒</h4>
+      </div>
+      <div class="modal-body text-center">
+          <p>外围走廊有二十个点可供浏览，</p>
+          <p>是否自动浏览</p>
+      </div>
+      <div class="modal-footer">
+          <div class="btn-group btn-group-justified" role="group" id="corridor_hint" aria-label="button group">
+              <a href="#" class="btn btn-link no_button" role="button" id="corridor_pano_button"></a>
+              <a href="#" class="btn btn-link yes_button" role="button" id="corridor_pano_auto_button"></a>
+          </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade hint_modal" id="hall_modal" tabindex="-1" role="dialog" aria-labelledby="model detail" aria-hidden="true">
+  <div class="modal-dialog modal-sm hint_dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title">温馨提醒</h4>
+      </div>
+      <div class="modal-body text-center">
+          <p>大厅有五个点可供浏览，</p>
+          <p>是否自动浏览</p>
+      </div>
+      <div class="modal-footer">
+          <div class="btn-group btn-group-justified" role="group" id="hall_hint" aria-label="button group">
+              <a href="#" class="btn btn-link no_button" role="button" id="hall_pano_button"></a>
+              <a href="#" class="btn btn-link yes_button" role="button" id="hall_pano_auto_button"></a>
+          </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade hint_modal" id="prompt_modal" tabindex="-1" role="dialog" aria-labelledby="model detail" aria-hidden="true">
+  <div class="modal-dialog modal-sm hint_dialog" id="prompt_dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title">温馨提醒</h4>
+      </div>
+      <div class="modal-body text-center">
+          <p>竖屏下体验更佳</p>
+      </div>
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</body>
+
+</body>
+</html>
