@@ -15,22 +15,13 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="format-detection" content="telephone=yes">
     <link rel="apple-touch-icon" href="http://auto3d.oss-cn-hangzhou.aliyuncs.com/common/images/d.png">
-    <link rel="stylesheet" type="text/css" href="/static/ic/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/static/ic/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="/static/ic/css/slick.css">
-    <link rel="stylesheet" type="text/css" href="/static/ic/css/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="/static/ic/css/ic.css">
-    <script data-main="/static/ic/js/ic" defer async="true" src="/static/ic/js/require.js"></script>
-    <script type="text/javascript">
-      var work_id = '{{ work_id }}'
-    </script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="sprite.css">
+    <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
 </head>
 <body>
-<div id="auto3d" class="hidden">
-
-</div>
-
-
 <div class="container-fluid">
     <nav class="navbar navbar-default navbar-fixed-top" id="ic_advertisement">
         <div class="container-fluid">
@@ -82,17 +73,6 @@
         </div>
 
     </div>
-    <!--<div class="hidden" id="section_container">-->
-        <!--<img src="/static/ic/images/0731.jpg" alt="test">-->
-    <!--</div>-->
-    <!--<div class="outdoor-carousel hidden" id="outdoor_carousel">-->
-        <!--<div><img src="/static/ic/images/0731.jpg" alt="test"></div>-->
-        <!--<div><img src="/static/ic/images/0731.jpg" alt="test"></div>-->
-        <!--<div><img src="/static/ic/images/0731.jpg" alt="test"></div>-->
-    <!--</div>-->
-
-
-
 </div>
 <!-- Modal -->
 <div class="modal fade" id="section_modal" tabindex="-1" role="dialog" aria-labelledby="model section" aria-hidden="true">
@@ -111,11 +91,7 @@
     <div class="modal-dialog lg_dialog">
         <div class="modal-content">
             <div class="modal-body">
-                <div class="outdoor-carousel" id="outdoor_carousel">
-                    <div><img src="http://auto3d.oss-cn-hangzhou.aliyuncs.com/outsource/ic/demo/images/suit_info/outdoor_0.jpg" alt="test"></div>
-                    <div><img src="http://auto3d.oss-cn-hangzhou.aliyuncs.com/outsource/ic/demo/images/suit_info/outdoor_1.jpg" alt="test"></div>
-                    <div><img src="http://auto3d.oss-cn-hangzhou.aliyuncs.com/outsource/ic/demo/images/suit_info/outdoor_2.jpg" alt="test"></div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -201,19 +177,6 @@
 </div><!-- /.modal -->
 
 
-<div class="modal fade hint_modal" id="prompt_modal" tabindex="-1" role="dialog" aria-labelledby="model detail" aria-hidden="true">
-  <div class="modal-dialog modal-sm hint_dialog" id="prompt_dialog">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title">温馨提醒</h4>
-      </div>
-      <div class="modal-body text-center">
-          <p>竖屏下体验更佳</p>
-      </div>
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-</body>
 
 </body>
 </html>

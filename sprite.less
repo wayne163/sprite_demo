@@ -1,3 +1,4 @@
+@all-url: "all.svg";
 @house-example-selected-url: 'http://auto3d.oss-cn-hangzhou.aliyuncs.com/outsource/ic/demo/images/house_example/selected.svg';
 @house-example-unselected-url: 'http://auto3d.oss-cn-hangzhou.aliyuncs.com/outsource/ic/demo/images/house_example/unselected.svg';
 @suit-info-selected-url: 'http://auto3d.oss-cn-hangzhou.aliyuncs.com/outsource/ic/demo/images/suit_info/selected.svg';
@@ -105,15 +106,20 @@ html {
               text-align: center;
               margin-left: 5.6666666%;
               #text_button{
-                width: 100%;
-                .setBackgroundImg(@advertisement-text-url, 1.0, 0%)
+                width: 50%; //100%;
+                // .setBackgroundImg(@advertisement-text-url, 1.0, 0%)
+                background: url(@all-url) no-repeat 19.231% 13.655%;
+                background-size: 180% auto;
               }
             }
             .close_ad{
               text-align: right;
               margin-left: 4%;
               .btn {
-                .setBackgroundImg(@advertisement-close-url, 1.0);
+                // .setBackgroundImg(@advertisement-close-url, 1.0);
+                width: 10%;
+                background: url(@all-url) no-repeat 55.437% 29.707%;
+                background-size: 2000% auto;
               }
             }
 
